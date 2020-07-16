@@ -4,8 +4,8 @@
 This is a simple clone from the Facebook App.
 
 ### 📷 How is this App
-<img src="Screenshot_1594854967.png" width="25%"></img>
-<img src="Screenshot_1594855127.png" width="25%"></img>
+<img src="Screenshot_1594871564.png" width="25%"></img>
+<img src="Screenshot_1594871571.png" width="25%"></img>
 
 ### 💻Technology
 - [Kotlin](https://kotlinlang.org/)
