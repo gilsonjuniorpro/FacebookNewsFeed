@@ -1,12 +1,11 @@
 package facebook.ca.ui
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.google.android.material.tabs.TabLayout
 import facebook.ca.R
 import facebook.ca.adapter.PostAdapter
 import facebook.ca.model.Post
@@ -16,6 +15,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        var tabTop = findViewById<TabLayout>(R.id.tabTop)
+        tabTop.addTab(tabTop.newTab().setIcon(R.drawable.feed))
+        tabTop.addTab(tabTop.newTab().setIcon(R.drawable.request))
+        tabTop.addTab(tabTop.newTab().setIcon(R.drawable.users))
+        tabTop.addTab(tabTop.newTab().setIcon(R.drawable.watch))
+        tabTop.addTab(tabTop.newTab().setIcon(R.drawable.notify))
+        tabTop.addTab(tabTop.newTab().setIcon(R.drawable.more))
 
         var items = getItems()
 
